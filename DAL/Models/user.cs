@@ -10,17 +10,14 @@ namespace DAL.Models
     public class user
     {
         [Key]
-        public string uname { get; set; }
-
+        public string Uname { get; set; }
         [Required]
-        [StringLength(50)]
-        public string password { get; set; }
-        [EmailAddress]
-        public string email { get; set; }
-
-        [Required,StringLength(50)]
-        public string name { get; set; }
-        public string type { get; set; }
-
+        [StringLength(20)]
+        public string Password { get; set; }
+        [Required]
+        [StringLength(20)]
+        public string Name { get; set; }
+        [Required]
+        public string Type { get; set; }
     }
 }

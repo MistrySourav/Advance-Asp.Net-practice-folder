@@ -10,23 +10,16 @@ namespace DAL.Models
 {
     public class comment
     {
-        public int id {  get; set; }
-
+        public int Id { get; set; }
         [Required]
-        public string commentText { get; set; }
-
-        public DateTime time { get; set; }
-
+        public string CommentText { get; set; }
+        public DateTime Time { get; set; }
         [ForeignKey("user")]
-
-        public string commentedBy { get; set; }
-
-
+        public string CommentedBy { get; set; }
         [ForeignKey("post")]
-        public int PostId { get; set; }
-
+        public int? PostId { get; set; }
         public virtual post post { get; set; }
-
         public virtual user user { get; set; }
+
     }
 }

@@ -52,6 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Interface\IRepo.cs" />
+    <Compile Include="Migrations\202506132029527_Relation.cs" />
+    <Compile Include="Migrations\202506132029527_Relation.designer.cs">
+      <DependentUpon>202506132029527_Relation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\comment.cs" />
     <Compile Include="Models\post.cs" />
@@ -62,6 +67,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202506132029527_Relation.resx">
+      <DependentUpon>202506132029527_Relation.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repo\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
