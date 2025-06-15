@@ -51,7 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="DataAccessFactory.cs" />
+=======
+    <Compile Include="Class1.cs" />
+>>>>>>> 424e2ab063b30a78775cae58ccf6f33b4b77acd7
     <Compile Include="Interface\IRepo.cs" />
     <Compile Include="Migrations\202506132029527_Relation.cs" />
     <Compile Include="Migrations\202506132029527_Relation.designer.cs">
@@ -77,7 +81,13 @@
       <DependentUpon>202506132029527_Relation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup />
+=======
+  <ItemGroup>
+    <Folder Include="Repo\" />
+  </ItemGroup>
+>>>>>>> 424e2ab063b30a78775cae58ccf6f33b4b77acd7
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
